@@ -9,15 +9,19 @@
         "cakephp/cakephp": "~3.0",
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
-        "cakephp/plugin-installer": "*"
+        "cakephp/plugin-installer": "*",
+        "vlucas/phpdotenv": "~1.1@dev"
     },
     "require-dev": {
         "psy/psysh": "@stable",
         "cakephp/debug_kit": "~3.0",
-        "cakephp/bake": "~1.0"
+        "cakephp/bake": "~1.0",
+        "behat/mink-extension": "~2.0@dev",
+        "behat/mink-goutte-driver": "~1.1@dev",
+        "sizuhiko/cake_fabricate": "dev-master",
+        "phpunit/phpunit": "~4.8@dev"
     },
     "suggest": {
-        "phpunit/phpunit": "Allows automated tests to be run without system-wide install.",
         "cakephp/cakephp-codesniffer": "Allows to check the code against the coding standards used in CakePHP."
     },
     "autoload": {

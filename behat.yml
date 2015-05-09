@@ -1,0 +1,17 @@
+# behat.yml
+default:
+  # ...
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://blog-tutorial.app.test/'
+      sessions:
+        default:
+          goutte: ~
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - WebContext
+        - ArticlesContext
+        - UsersContext
+        - CategoriesContext

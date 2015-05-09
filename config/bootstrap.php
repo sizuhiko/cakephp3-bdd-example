@@ -193,3 +193,7 @@ if (Configure::read('debug')) {
 DispatcherFactory::add('Asset');
 DispatcherFactory::add('Routing');
 DispatcherFactory::add('ControllerFactory');
+
+if (getenv('CAKE_ENV') === 'test') {
+    ConnectionManager::alias('test', 'default');
+}

@@ -4,13 +4,13 @@ namespace App\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * CategoriesFixture
+ * ArticlesFixture
  *
  */
-class CategoriesFixture extends TestFixture
+class ArticlesFixture extends TestFixture
 {
 
-    public $import = ['table' => 'categories'];
+    public $import = ['table' => 'articles'];
 
     /**
      * Records

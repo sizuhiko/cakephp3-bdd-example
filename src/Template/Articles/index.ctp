@@ -2,7 +2,7 @@
 
 <h1>Blog articles</h1>
 <p><?= $this->Html->link('Add Article', ['action' => 'add']) ?></p>
-<table>
+<table id="articles">
     <tr>
         <th>Id</th>
         <th>Title</th>
