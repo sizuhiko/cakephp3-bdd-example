@@ -1,6 +1,7 @@
 <?php
 
 use Behat\MinkExtension\Context\MinkContext;
+use Cake\Routing\Router;
 
 class WebContext extends MinkContext
 {
@@ -12,8 +13,8 @@ class WebContext extends MinkContext
     private function getPathTo($path)
     {
         switch ($path) {
-            case 'TopPage': return '/articles/';
-            case 'トップページ': return '/articles/';
+            case 'TopPage': return Router::url(['controller' => 'articles', 'action' => 'index']);
+            case 'トップページ': return Router::url(['controller' => 'articles', 'action' => 'index']);
             default: return $path;
         }
     }
