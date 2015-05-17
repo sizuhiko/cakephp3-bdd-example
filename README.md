@@ -173,6 +173,14 @@ localhost:cakebox $ sudo vi /etc/hosts
 10.33.10.10 blog-tutorial.app.test
 ```
 
+### Migrate Database
+
+Create all tables for application by migration command.
+
+```
+bin/cake migrations migrate
+```
+
 ### Run Test
 
 After installations and configurations completed successfully, run test using Behat.
