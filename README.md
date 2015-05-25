@@ -81,6 +81,26 @@ Updated Security.salt value in config/app.php
 
 ### Configuration
 
+#### Nginx Config (webroot)
+
+Should change webroot.
+
+```
+sudo vi /etc/nginx/sites-available/blog-tutorial.app
+```
+
+After installing application, webroot is not installed path.
+
+```
+root blog-tutorial.app;
+```
+
+Change `root` to real path of installed application.
+
+```
+root /home/vagrant/Apps/blog-tutorial.app/webroot;
+```
+
 #### Example Application Config
 
 Edit section of database connection in `config/app.php`.
