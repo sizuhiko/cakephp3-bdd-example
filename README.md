@@ -55,7 +55,7 @@ Application created using:
   path => /home/vagrant/Apps/blog-tutorial.app
   source => https://github.com/sizuhiko/cakephp3-bdd-example.git
   url => blog-tutorial.app
-  webroot => blog-tutorial.app
+  webroot => /home/vagrant/Apps/blog-tutorial.app/webroot
 Please note:
   => Configuration files are not automatically updated for user specified applications.
   => Make sure to manually update your database credentials, plugins, etc.
