@@ -29,7 +29,7 @@ localhost:cakebox $ vagrant up
 localhost:cakebox $ vagrant ssh
 Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-24-generic x86_64)
 
-vagrant@cakebox $ cakebox application add blog-tutorial.app --source https://github.com/sizuhiko/cakephp3-bdd-example.git --webroot blog-tutorial.app
+vagrant@cakebox $ cakebox application add blog-tutorial.app --source https://github.com/sizuhiko/cakephp3-bdd-example.git --webroot /home/vagrant/Apps/blog-tutorial.app/webroot
 ```
 
 It will print out logs of installation followings:
@@ -80,26 +80,6 @@ Updated Security.salt value in config/app.php
 ```
 
 ### Configuration
-
-#### Nginx Config (webroot)
-
-Should change webroot.
-
-```
-sudo vi /etc/nginx/sites-available/blog-tutorial.app
-```
-
-After installing application, webroot is not installed path.
-
-```
-root blog-tutorial.app;
-```
-
-Change `root` to real path of installed application.
-
-```
-root /home/vagrant/Apps/blog-tutorial.app/webroot;
-```
 
 #### Example Application Config
 
