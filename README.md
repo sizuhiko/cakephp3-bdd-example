@@ -23,6 +23,25 @@ localhost:cakebox $ cp Cakebox.yaml.default Cakebox.yaml
 localhost:cakebox $ vagrant up
 ```
 
+upgrade your box to Ubuntu 16.04 with PHP7.1 by running:
+
+```
+localhost:cakebox $ vagrant ssh
+vagrant@cakebox $ sudo apt-get update
+vagrant@cakebox $ sudo apt-get install software-properties-common python-software-properties
+vagrant@cakebox $ /cakebox/bash/ubuntu-16.sh
+vagrant@cakebox $ exit
+localhost:cakebox $ vagrant reload
+```
+
+Check PHP version:
+
+```
+localhost:cakebox $ vagrant ssh
+vagrant@cakebox:~$ php -v
+PHP 7.1.12-2+ubuntu16.04.1+deb.sury.org+2 (cli) (built: Dec  7 2017 20:12:04) ( NTS )
+```
+
 3: Install example application
 
 ```
@@ -144,11 +163,11 @@ vm:
 2: Set xdebug.max_nesting_level
 
 ```
-localhost:cakebox $ sudo vi /etc/php5/mods-available/xdebug.ini
+localhost:cakebox $ sudo vi /etc/php/7.1/fpm/conf.d/20-xdebug.ini  
 ```
 
 ```ini
-# /etc/php5/mods-available/xdebug.ini
+# /etc/php/7.1/fpm/conf.d/20-xdebug.ini
 xdebug.max_nesting_level=500
 ```
 
