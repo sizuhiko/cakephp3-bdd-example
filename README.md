@@ -46,7 +46,7 @@ PHP 7.1.12-2+ubuntu16.04.1+deb.sury.org+2 (cli) (built: Dec  7 2017 20:12:04) ( 
 
 ```
 localhost:cakebox $ vagrant ssh
-Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-24-generic x86_64)
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-103-generic x86_64)
 
 vagrant@cakebox $ cakebox application add blog-tutorial.app --source https://github.com/sizuhiko/cakephp3-bdd-example.git --webroot /home/vagrant/Apps/blog-tutorial.app/webroot
 ```
